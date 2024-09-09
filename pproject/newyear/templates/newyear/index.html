@@ -1,0 +1,27 @@
+{% extends "newyear/layout.html" %}
+{% load static %}
+
+{% block style%}
+    <link rel="stylesheet" href="{% static 'newyear/styles.css' %}">
+{% endblock%}
+
+{% block body%}
+<header>
+    <h1>Is it new year?</h1>
+</header>
+
+<main>
+    {% if newyear%}
+        <h1>YES</h1>
+    {% else %}
+        <h1>NO</h1>
+    {% endif %}
+</main>
+
+<footer>
+    <p>&copy; 2024 DiveBridge</p>
+</footer>
+
+{% endblock%}
+ 
+
